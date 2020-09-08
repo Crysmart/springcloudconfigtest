@@ -1,0 +1,14 @@
+spring:
+    profiles:
+        active:
+            - dev
+---
+spring:
+    profiles: dev
+    application:
+        name: provider-server-dev
+---
+spring:
+    profiles: test
+    application:
+        name: provider-server-test
