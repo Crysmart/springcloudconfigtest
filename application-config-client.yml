@@ -1,0 +1,18 @@
+spring:
+    profiles:
+        active:
+            - dev
+---
+server:
+    port: 6001
+spring:
+    profiles: dev
+    application:
+        name: provider-server-client-dev
+---
+server:
+    port: 6002
+spring:
+    profiles: test
+    application:
+        name: provider-server-client-test
